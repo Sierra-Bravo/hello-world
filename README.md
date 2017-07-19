@@ -6,7 +6,7 @@ sup
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.js"></script>
 
-		<script type="x-shader/x-vertex" id="vertexShader">
+<script type="x-shader/x-vertex" id="vertexShader">
 			attribute vec3 center;
 			varying vec3 vCenter;
 			void main() {
@@ -104,4 +104,4 @@ sup
 				}
 				renderer.render( scene, camera );
 			}
-		</script>
+</script>
