@@ -7,6 +7,7 @@ sup
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.js"></script>
 
 <script type="x-shader/x-vertex" id="vertexShader">
+
 attribute vec3 center;
 varying vec3 vCenter;
 void main() {
@@ -16,6 +17,7 @@ gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 </script>
 
 <script type="x-shader/x-fragment" id="fragmentShader">
+
 varying vec3 vCenter;
 float edgeFactorTri() {
 vec3 d = fwidth( vCenter.xyz );
@@ -29,6 +31,7 @@ gl_FragColor.a = 1.0;
 </script>
 
 <script>
+
 var camera, scene, renderer;
 init();
 animate();
